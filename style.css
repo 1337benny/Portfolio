@@ -1,0 +1,44 @@
+body{
+    font-family: "Roboto Mono", monospace;
+    background-color: #070d21;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbarContainer{
+    margin-top: 15px;
+    height: 10%;
+    text-align: right;
+    padding-right: 27px;
+}
+
+.navbarItem{
+    padding-left: 17px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbarItem:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+
+
+.welcomeContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcomeContainer p{
+    padding: 0.4rem;
+    margin: 0;
+}
+
+.myName{
+    font-size: 50px;
+}
