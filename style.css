@@ -41,7 +41,18 @@ body{
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    border: solid;
+    border-width: 1px;
+    padding: 0.2rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+#translate:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
 
 
 
@@ -164,7 +175,16 @@ body{
 .experience {
     background-color: rgb(79, 77, 198);
     border-radius: 10px;
-    padding: 25px;
+    padding: 15px 20px;
+}
+
+.experience h3{
+    text-decoration: underline;
+    font-size: x-large;
+}
+.experience li{
+font-size: small;
+
 }
 
 
