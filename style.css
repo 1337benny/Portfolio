@@ -6,6 +6,9 @@ body{
     padding: 0;
 }
 
+.homePageContainer{
+    height: 100vh;
+}
 
 .navbarContainer{
     margin-top: 15px;
@@ -15,20 +18,45 @@ body{
 }
 
 .navbarItem{
-    padding-left: 17px;
+    margin-left: 17px;
     display: inline-block;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: white;
+    text-decoration: none;
 }
 
 .navbarItem:hover{
     transform: scale(1.2);
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.socialsContainer{
+    position: absolute;
+    top: 88%;
+    text-align: left;
+    
+}
+
+.socialsItem{
+ color: white;
+ font-size: xx-large;
+ display: block;
+ margin-left: 20px;
+ margin-bottom: 10px;
+ width: fit-content;
+ transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.socialsItem:hover{
+    transform: scale(1.3);
+    cursor: pointer;
 }
 
 
 
 .welcomeContainer{
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -41,4 +69,73 @@ body{
 
 .myName{
     font-size: 50px;
+}
+
+.aboutMeContainer{
+    height: 100vh;
+    
+}
+
+.aboutMeContainer h1{
+    padding-top: 5%;
+    text-align: center;
+}
+
+.aboutMeContainer p {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.aboutMePictures{
+    
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 40px;
+    
+}
+.aboutMePictures img{
+    border: solid;
+    height: 72%;
+    width: 18%;
+}
+
+.prevExpContainer{
+    height: 100vh;
+    padding-top: 5%;
+}
+
+.prevExpContainer h1{
+    text-align: center;
+}
+
+.prevExpText{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.experienceContainer{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 30px;
+}
+
+.experience{
+    border-radius: 5%;
+    border: solid;
+    padding: 10px;
+    background-color: rgb(79, 77, 198);
+
+}
+
+.contactContainer{
+    padding-top: 5%;
+    height: 100vh;
+}
+
+.contactContainer h1{
+    text-align: center;
 }
