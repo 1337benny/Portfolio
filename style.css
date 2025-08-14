@@ -9,31 +9,45 @@ body{
 .homePageContainer{
     height: 100vh;
 }
-
-.navbarContainer{
-    margin-top: 15px;
-    height: 10%;
-    text-align: right;
-    padding-right: 27px;
+.navbarContainer {
+    display: flex;
+    justify-content: space-between; /* knuffar translate till vänster, länkar till höger */
+    align-items: center;
+    margin-top: 25px;
+    padding: 0 27px; /* padding både vänster och höger */
 }
 
-.navbarItem{
-    margin-left: 17px;
+.navbarLinks {
+    display: flex;
+    gap: 17px;
+}
+
+.navbarItem {
     display: inline-block;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     color: white;
     text-decoration: none;
 }
 
-.navbarItem:hover{
+.navbarItem:hover {
     transform: scale(1.2);
     text-decoration: underline;
     cursor: pointer;
 }
 
+#translate {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
 .socialsContainer{
     position: absolute;
-    top: 88%;
+    top: 83%;
     text-align: left;
     
 }
@@ -71,10 +85,12 @@ body{
     font-size: 50px;
 }
 
-.aboutMeContainer{
-    height: 100vh;
-    
+.aboutMeContainer {
+    min-height: 100vh; 
+    padding-bottom: 5vh; 
+    box-sizing: border-box;
 }
+
 
 .aboutMeContainer h1{
     padding-top: 5%;
@@ -93,20 +109,27 @@ body{
     justify-content: center;
     gap: 1rem;
     margin-top: 40px;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .aboutMePictures img{
     border: solid;
+    border-radius: 5px;
     height: 72%;
     width: 18%;
 }
+ 
+
 
 .prevExpContainer{
-    height: 100vh;
-    padding-top: 5%;
+    min-height: 100vh; 
+    padding-bottom: 5vh; 
+    box-sizing: border-box;
+    
 }
 
 .prevExpContainer h1{
+    padding-top: 5%;
     text-align: center;
 }
 
@@ -115,27 +138,60 @@ body{
     text-align: center;
     margin: auto;
 }
-
-.experienceContainer{
+.experienceContainer {
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    margin-top: 30px;
+    gap: 2rem; 
+    padding: 2rem;
+    flex-wrap: wrap; 
+    width: 80%;
+    margin: 0 auto;
 }
 
-.experience{
-    border-radius: 5%;
-    border: solid;
-    padding: 10px;
+.education {
+    flex: 1;
+    min-width: 300px;
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    min-width: 300px;
+}
+
+.experience {
     background-color: rgb(79, 77, 198);
-
+    border-radius: 10px;
+    padding: 25px;
 }
+
+
 
 .contactContainer{
-    padding-top: 5%;
-    height: 100vh;
+    min-height: 100vh; 
+    padding-bottom: 5vh; 
+    box-sizing: border-box;
+    padding-top: 30px;
 }
 
-.contactContainer h1{
+.contactContainer h1, .contactContainer p{
     text-align: center;
+}
+
+
+.contactInfoContainer{
+    border-radius: 5%;
+    background-color: rgb(30, 37, 138);
+    width: 30%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.contactIcon{
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    margin-left: 2rem;
 }

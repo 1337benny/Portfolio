@@ -1,0 +1,28 @@
+{
+  "SV": {
+    "aboutMe": "Om mig",
+    "prevWork": "Tidigare arbete",
+    "contact": "Kontakt",
+    "translateLanguage": "English",
+    "welcomeText": "Hej! Mitt namn är",
+    "myName": "William Lagerqvist",
+    "iStudy": "Jag studerar till systemvetare.",
+    "welcomeToMyPortfolio": "Välkommen till min portfolio",
+    "aboutMeText": "Hej! Vad kul att du hittade hit :) Mitt namn är William och jag är 25 år gammal. Jag är bosatt, född och uppvuxen i Örebro. Jag har sedan VT24 studerat det systemvetenskapliga programmet vid Örebro Universitet. På min fritid umgås jag gärna med vänner och familj. Jag gillar även att resa och träna.",
+    "prevWorkTitle": "Tidigare arbete och erfarenheter"
+
+
+  },
+  "EN": {
+    "aboutMe": "About me",
+    "prevWork": "Previous work",
+    "contact": "Contact",
+    "translateLanguage": "Swedish",
+    "welcomeText": "Hello! My name is",
+    "myName": "William Lagerqvist",
+    "iStudy": "I study the programme of systems analysis.",
+    "welcomeToMyPortfolio": "Welcome to my portfolio!",
+    "aboutMeText": "Hi! So glad you found your way here :) My name is William and I'm 25 years old. I was born, raised, and still live in Örebro. Since the spring semester of 2024, I’ve been studying the Information Systems program at Örebro University. In my spare time I like to be with friends and family. I also enjoy traveling and working out.",
+    "prevWorkTitle": "Previous Work and Experience"
+  }
+}
