@@ -189,7 +189,29 @@ font-size: small;
 
 }
 
+.projectHeader{
+    text-align: center;
+}
 
+.projTitle{
+    text-decoration: underline;
+}
+
+.prevProjectsContainer{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 1rem;
+}
+
+.project{
+    background-color: #b4920a;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 300px;
+    min-width: 200px;
+    padding: 1.5rem;
+}
 
 .contactContainer{
     min-height: 100vh; 
@@ -300,7 +322,7 @@ font-size: small;
         }
     }
 
-.aboutMeContainer{
+.aboutMeContainer, .project{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
