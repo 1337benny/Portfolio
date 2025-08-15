@@ -1,3 +1,5 @@
+
+//Translation
 let translations = {};
 let currentLanguage = "SV";
 
@@ -9,8 +11,6 @@ function setLanguage(lang) {
   });
 }
 
-
-// Ladda JSON-filen
 fetch("translation.json")
   .then(response => response.json())
   .then(data => {
@@ -24,3 +24,21 @@ fetch("translation.json")
   setLanguage(currentLanguage);});
 
   
+  //Back to top button
+  const backToTopButton = document.getElementById("topButton");
+  backToTopButton.style.display = 'none';
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > window.innerHeight) {
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  });
+
+  backToTopButton.addEventListener('click', () =>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  })

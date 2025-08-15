@@ -1,3 +1,4 @@
+
 {
   "SV": {
     "aboutMe": "Om mig",
@@ -7,11 +8,20 @@
     "welcomeText": "Hej! Mitt namn är",
     "myName": "William Lagerqvist",
     "iStudy": "Jag studerar till systemvetare.",
-    "welcomeToMyPortfolio": "Välkommen till min portfolio",
+    "welcomeToMyPortfolio": "Välkommen till min portfolio!",
+    "backToTop": "Tillbaka till toppen ",
     "aboutMeText": "Hej! Vad kul att du hittade hit :) Mitt namn är William och jag är 25 år gammal. Jag är bosatt, född och uppvuxen i Örebro. Jag har sedan VT24 studerat det systemvetenskapliga programmet vid Örebro Universitet. På min fritid umgås jag gärna med vänner och familj. Jag gillar även att resa och träna.",
-    "prevWorkTitle": "Tidigare arbete och erfarenheter"
-
-
+    "prevWorkTitle": "Tidigare arbete och erfarenheter",
+    "prevWorkText": "Under mina 25 år har jag hunnit samla på mig en rad olika erfarenheter. Mitt första jobb (förutom tidigare sommarjobb) var på McDonalds i stan. Där jobbade jag vid sidan av mina studier under gymnasiet.",
+    "educationTitle": "Utbildning",
+    "highSchool": "Naturvetenskapliga programet - Rudbecksgymnasiet (2016 - 2019)",
+    "university": "Systemvetenskapliga programmet, SSV1K - Örebro Universitet (2024 - jan 2027)",
+    "courses": "Kurser:",
+    "work": "Arbete",
+    "mcDonalds": "McDonalds - Handledare (2016 - 2018)",
+    "dagab": "Dagab inköp och logistik - Teamleader (2019 - Nu)",
+    "progLanguage": "Programspråk",
+    "contactText": "Tveka inte att kontakta mig för ett CV eller bara snack :)"
   },
   "EN": {
     "aboutMe": "About me",
@@ -22,7 +32,20 @@
     "myName": "William Lagerqvist",
     "iStudy": "I study the programme of systems analysis.",
     "welcomeToMyPortfolio": "Welcome to my portfolio!",
+    "backToTop": "Back to the top ",
     "aboutMeText": "Hi! So glad you found your way here :) My name is William and I'm 25 years old. I was born, raised, and still live in Örebro. Since the spring semester of 2024, I’ve been studying the Information Systems program at Örebro University. In my spare time I like to be with my friends and family. I also enjoy traveling and working out.",
-    "prevWorkTitle": "Previous Work and Experience"
+    "prevWorkTitle": "Previous Work and Experience",
+    "prevWorkText": "In my 25 years, I’ve managed to gather a variety of experiences. My first job (besides previous summer jobs) was at McDonald's in town. I worked there alongside my high school studies.",
+    "educationTitle": "Education",
+    "highSchool": "Natural Science Programme - Rudbeck High School (2016 - 2019)",
+    "university": "Information Systems Programme, SSV1K - Örebro University (2024 - Jan 2027)",
+    "courses": "Courses:",
+    "work": "Work",
+    "mcDonalds": "McDonalds - Crew Trainer (2016 - 2018)",
+    "dagab": "Dagab Inköp och Logistik - Team Leader (2019 - Present)",
+    "progLanguage": "Programming Languages",
+    "contactText": "Don't hesitate to contact me for a CV or just a chat :)"
   }
 }
+
+  

@@ -5,21 +5,25 @@ body{
     margin: 0;
     padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 .homePageContainer{
     height: 100vh;
 }
 .navbarContainer {
     display: flex;
-    justify-content: space-between; /* knuffar translate till vänster, länkar till höger */
+    justify-content: space-between; 
     align-items: center;
     margin-top: 25px;
-    padding: 0 27px; /* padding både vänster och höger */
+    padding: 0 27px; 
 }
 
 .navbarLinks {
     display: flex;
-    gap: 17px;
+    gap: 20px;
 }
 
 .navbarItem {
@@ -30,7 +34,7 @@ body{
 }
 
 .navbarItem:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -126,6 +130,7 @@ body{
 .aboutMePictures img{
     border: solid;
     border-radius: 5px;
+    border-width: 1px;
     height: 72%;
     width: 18%;
 }
@@ -206,12 +211,91 @@ font-size: small;
     background-color: rgb(30, 37, 138);
     width: 30%;
     padding: 10px;
-    margin: auto;
+    margin: 50px auto;
     text-align: center;
+    min-width: 350px;
+    
 }
 
 .contactIcon{
     font-size: xx-large;
     color: rgb(255, 255, 255);
     margin-left: 2rem;
+}
+
+.backToTop{
+    text-align: center;
+    border: solid;
+    width: fit-content;
+    padding: 0.5rem;
+    border-width: 2px;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: fixed;
+    bottom: 20px;   
+    right: 20px;    
+    z-index: 1000;
+}
+
+.backToTop:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Animation */
+
+ @keyframes appear{
+        from{
+            opacity: 0;
+            scale: 0.7;
+        }
+        to {
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    @keyframes leftToRight{
+        from{
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes rightToLeft{
+        from{
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+.aboutMeContainer{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+
+.education{
+    animation: leftToRight linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25%;
+}
+
+.rightColumn{
+    animation: rightToLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25%;
+}
+
+.progLanguage{
+    animation: rightToLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25%;
 }
