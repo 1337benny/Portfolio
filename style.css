@@ -57,9 +57,6 @@ html {
 }
 
 
-
-
-
 .socialsContainer{
     position: absolute;
     top: 83%;
@@ -82,8 +79,6 @@ html {
     cursor: pointer;
 }
 
-
-
 .welcomeContainer{
     position: absolute;
     top: 50%;
@@ -99,6 +94,8 @@ html {
 .myName{
     font-size: 50px;
 }
+
+
 
 .aboutMeContainer {
     min-height: 100vh; 
@@ -276,6 +273,33 @@ font-size: small;
         }
     }
 
+    @keyframes handWave{
+        0%{
+            transform: rotate(0deg);
+        }
+        10%{
+            transform: rotate(14deg);
+        }
+        20%{
+            transform: rotate(-8deg);
+        }
+        30%{
+            transform: rotate(14deg);
+        }
+        40%{
+            transform: rotate(-4deg);
+        }
+        50%{
+            transform: rotate(10deg);
+        }
+        60%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate();
+        }
+    }
+
 .aboutMeContainer{
     animation: appear linear;
     animation-timeline: view();
@@ -298,4 +322,11 @@ font-size: small;
     animation: rightToLeft linear;
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
+}
+
+.handWave{
+    display: inline-block;
+    font-size: x-large;
+    animation: handWave 2.5s infinite;
+    transform: 70% 70%;
 }
