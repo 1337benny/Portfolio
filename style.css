@@ -202,6 +202,8 @@ font-size: small;
  flex-wrap: wrap;
  justify-content: center;
  gap: 1rem;
+ width: 90%;
+ margin: 0 auto;
 }
 
 .project{
@@ -217,7 +219,7 @@ font-size: small;
     min-height: 100vh; 
     padding-bottom: 5vh; 
     box-sizing: border-box;
-    padding-top: 30px;
+    padding-top: 150px;
 }
 
 .contactContainer h1, .contactContainer p{
