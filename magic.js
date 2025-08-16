@@ -42,3 +42,22 @@ fetch("translation.json")
       behavior: 'smooth'
     });
   })
+
+  //age calculator
+  let age = 0;
+  const nowYear = new Date().getFullYear();
+  const nowMonth = new Date().getMonth() +1;
+  const nowDay = new Date().getDate();
+  const ageElement = document.getElementById("age");
+  
+  age = nowYear - 2000;
+
+  if (nowMonth < 6){
+    age -= 1;
+  }
+  else if (nowMonth == 6){
+    if (nowDay < 6){
+      age -= 1;
+    }
+  }
+  ageElement.innerHTML = age;

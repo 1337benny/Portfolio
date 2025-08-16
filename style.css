@@ -110,6 +110,11 @@ html {
 }
 
 .aboutMeContainer p {
+    display: inline;
+    
+}
+
+.aboutMeTextContainer{
     width: 60%;
     text-align: center;
     margin: auto;
@@ -128,8 +133,8 @@ html {
     border: solid;
     border-radius: 5px;
     border-width: 1px;
-    height: 72%;
-    width: 18%;
+    height: 80%;
+    width: 20%;
 }
  
 
@@ -213,6 +218,25 @@ font-size: small;
     max-width: 300px;
     min-width: 200px;
     padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+.project a{
+    display: inline-block;
+    border: solid;
+    border-width: 2px;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: auto; 
+    align-self: center; 
+}
+
+.project a:hover{
+    transform: scale(1.1);
 }
 
 .contactContainer{
@@ -244,6 +268,8 @@ font-size: small;
     margin-left: 2rem;
 }
 
+
+
 .backToTop{
     text-align: center;
     border: solid;
@@ -262,6 +288,36 @@ font-size: small;
     cursor: pointer;
     transform: scale(1.05);
 }
+
+/* Smaller screens */
+@media (max-width: 1000px) {
+  .aboutMeTextContainer{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.aboutMePictures img{
+    
+    width: 25%;
+}
+}
+
+/* Smaller screens */
+@media (max-width: 500px) {
+  .picLeft, .picRight{
+    display: none;
+  }
+  .aboutMePictures img {
+    width: 80%;  /* 👈 gör mittenbilden stor på små skärmar */
+    max-width: 300px; /* valfritt, så den inte blir för bred */
+  }
+  .navbarLinks {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+}
+
 
 /* Animation */
 
@@ -324,25 +380,25 @@ font-size: small;
         }
     }
 
-.aboutMeContainer, .project{
+.aboutMeContainer, .project2, .project5, .picCenter{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
 }
 
-.education{
+.education, .project1, .project3, .picLeft{
     animation: leftToRight linear;
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
 }
 
-.rightColumn{
+.rightColumn, .picRight{
     animation: rightToLeft linear;
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
 }
 
-.progLanguage{
+.progLanguage, .project4{
     animation: rightToLeft linear;
     animation-timeline: view();
     animation-range: entry 0 cover 25%;
