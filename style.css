@@ -137,8 +137,6 @@ html {
     width: 20%;
 }
  
-
-
 .prevExpContainer{
     min-height: 100vh; 
     padding-bottom: 5vh; 
@@ -203,12 +201,12 @@ font-size: small;
 }
 
 .prevProjectsContainer{
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- gap: 1rem;
- width: 90%;
- margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .project{
@@ -402,6 +400,35 @@ font-size: small;
 }
 .contactInfoContainer{
     margin: 0 20px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6); 
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 999; 
+}
+
+.projectInfoPopUp {
+    
+    width: 100vw;
+    height: 50vh;
+}
+
+.popUpPictures {
+    
+    height: 100%;
+    width: 95%;
+}
+
+.arrow{
+    font-size: 60px;
 }
 
 }
