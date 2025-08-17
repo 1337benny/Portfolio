@@ -235,8 +235,94 @@ font-size: small;
     align-self: center; 
 }
 
-.project a:hover{
+.project a:hover, .showPicButton:hover{
     transform: scale(1.1);
+    cursor: pointer;
+}
+
+.showPicButton{
+    display: inline-block;
+    border: solid;
+    border-width: 2px;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-top: 15px; 
+    align-self: center; 
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6); 
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 999; 
+}
+
+.projectInfoPopUp {
+    background-color: white;
+    width: 60vw;
+    height: 70vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.popUpPictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% auto;
+    height: 80%;
+    width: 80%;
+}
+
+
+.popUpPicture {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; 
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+
+#closePopUp{
+    position: absolute;
+    color: black;
+    font-size: xx-large;
+    top: 10px;
+    right: 10px;
+}
+
+#closePopUp:hover, .arrow:hover{
+    cursor: pointer;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 20px;
+    color: #070d21;
+    font-size: 80px;
+}
+
+#arrowBack {
+  left: 20%;
+}
+
+#arrowNext {
+  right: 20%;
 }
 
 .contactContainer{
@@ -250,15 +336,14 @@ font-size: small;
     text-align: center;
 }
 
-
 .contactInfoContainer{
     border-radius: 5%;
     background-color: rgb(30, 37, 138);
-    width: 30%;
-    padding: 10px;
+    width: fit-content;
+    padding: 30px;
     margin: 50px auto;
     text-align: center;
-    min-width: 350px;
+    /* min-width: 350px; */
     
 }
 
@@ -267,7 +352,6 @@ font-size: small;
     color: rgb(255, 255, 255);
     margin-left: 2rem;
 }
-
 
 
 .backToTop{
@@ -281,7 +365,7 @@ font-size: small;
     position: fixed;
     bottom: 20px;   
     right: 20px;    
-    z-index: 1000;
+    z-index: 900;
 }
 
 .backToTop:hover{
@@ -316,6 +400,10 @@ font-size: small;
     padding-left: 30px;
     padding-right: 10px;
 }
+.contactInfoContainer{
+    margin: 0 20px;
+}
+
 }
 
 
@@ -380,6 +468,16 @@ font-size: small;
         }
     }
 
+    @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to   { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeOut {
+    from { opacity: 1; transform: scale(1); }
+    to   { opacity: 0; transform: scale(0.95); }
+    }
+
 .aboutMeContainer, .project2, .project5, .picCenter{
     animation: appear linear;
     animation-timeline: view();
@@ -410,3 +508,6 @@ font-size: small;
     animation: handWave 2.5s infinite;
     transform: 70% 70%;
 }
+
+
+
