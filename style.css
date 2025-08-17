@@ -431,6 +431,13 @@ font-size: small;
     font-size: 60px;
 }
 
+.socialsContainer{
+    top: 92%;
+}
+.socialsItem{
+    display: inline;
+}
+
 }
 
 
